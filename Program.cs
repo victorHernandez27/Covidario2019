@@ -9,16 +9,11 @@ namespace Covid_19
         static ServicoCovid service = new ServicoCovid();
         static void Main(string[] args)
         {
-
-            //service.AdicionaPacienteFila(new Paciente("Jose pre", "3456", DateTime.Parse("22/04/1900")));
-            //service.AdicionaPacienteFila(new Paciente("Jose pre", "4567", DateTime.Parse("22/04/1900")));
+            
             service.filaPacientePreferencial.LerArquivo();
             service.filaPacienteNormal.LerArquivo();
             service.filaPacienteInternados.LerArquivo();
-            service.listaPacientes.LerArquivo();
-
-            //service.AdicionaPacienteFila(new Paciente("Jose", "1234", DateTime.Parse("22/04/2004")));
-            //service.AdicionaPacienteFila(new Paciente("Joao", "2345", DateTime.Parse("23/06/2002")));
+            service.listaPacientes.LerArquivo();       
 
             Menu();
         }
